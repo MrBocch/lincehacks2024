@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dumu0r6b52rq1"
+path="res://.godot/imported/debris-plate-small-b.obj-1eb019163cd547a0b18fe1de36c194bb.mesh"
+
+[deps]
+
+files=["res://.godot/imported/debris-plate-small-b.obj-1eb019163cd547a0b18fe1de36c194bb.mesh"]
+
+source_file="res://choque/kenney_car-kit/Models/OBJ format/debris-plate-small-b.obj"
+dest_files=["res://.godot/imported/debris-plate-small-b.obj-1eb019163cd547a0b18fe1de36c194bb.mesh", "res://.godot/imported/debris-plate-small-b.obj-1eb019163cd547a0b18fe1de36c194bb.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

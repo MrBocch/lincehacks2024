@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dl1rtwxn3h0x7"
+path="res://.godot/imported/wheel-default.obj-4386c8543f319c14b687094ca42b5dd2.mesh"
+
+[deps]
+
+files=["res://.godot/imported/wheel-default.obj-4386c8543f319c14b687094ca42b5dd2.mesh"]
+
+source_file="res://choque/kenney_car-kit/Models/OBJ format/wheel-default.obj"
+dest_files=["res://.godot/imported/wheel-default.obj-4386c8543f319c14b687094ca42b5dd2.mesh", "res://.godot/imported/wheel-default.obj-4386c8543f319c14b687094ca42b5dd2.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

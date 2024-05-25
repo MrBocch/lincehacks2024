@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://ddcbdp1p8f67r"
+path="res://.godot/imported/delivery-flat.obj-3612e7e74c22edf0deffce8215f01f64.mesh"
+
+[deps]
+
+files=["res://.godot/imported/delivery-flat.obj-3612e7e74c22edf0deffce8215f01f64.mesh"]
+
+source_file="res://choque/kenney_car-kit/Models/OBJ format/delivery-flat.obj"
+dest_files=["res://.godot/imported/delivery-flat.obj-3612e7e74c22edf0deffce8215f01f64.mesh", "res://.godot/imported/delivery-flat.obj-3612e7e74c22edf0deffce8215f01f64.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

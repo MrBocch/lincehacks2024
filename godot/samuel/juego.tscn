@@ -1,0 +1,46 @@
+[gd_scene load_steps=7 format=3 uid="uid://bjd8lk7hfc5er"]
+
+[ext_resource type="Texture2D" uid="uid://dp3dpr240hk72" path="res://assets/img/bg_silla.jpg" id="1_qdjpk"]
+[ext_resource type="Script" path="res://samuel/juego.gd" id="1_rxakk"]
+[ext_resource type="PackedScene" uid="uid://c3ckarus2euwb" path="res://samuel/jugador.tscn" id="2_nv5re"]
+[ext_resource type="PackedScene" uid="uid://cbcer1v5na3eq" path="res://samuel/droplet.tscn" id="3_cilnc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yiafg"]
+size = Vector2(20, 176)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pj5oo"]
+size = Vector2(1170, 20)
+
+[node name="juego" type="Node2D"]
+script = ExtResource("1_rxakk")
+
+[node name="bg" type="Sprite2D" parent="."]
+position = Vector2(575, 319)
+scale = Vector2(0.86, 0.719)
+texture = ExtResource("1_qdjpk")
+
+[node name="paredes" type="Node" parent="."]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="paredes"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="paredes/StaticBody2D"]
+position = Vector2(-8, 530)
+shape = SubResource("RectangleShape2D_yiafg")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="paredes"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="paredes/StaticBody2D2"]
+position = Vector2(1158, 510)
+shape = SubResource("RectangleShape2D_yiafg")
+
+[node name="piso" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="piso"]
+position = Vector2(583, 604)
+shape = SubResource("RectangleShape2D_pj5oo")
+
+[node name="samuel" parent="." instance=ExtResource("2_nv5re")]
+position = Vector2(571, 580)
+
+[node name="droplet" parent="." instance=ExtResource("3_cilnc")]
+position = Vector2(527, 124)

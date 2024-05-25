@@ -1,0 +1,82 @@
+[gd_scene load_steps=12 format=3 uid="uid://bknfyfoblxgfb"]
+
+[ext_resource type="Texture2D" uid="uid://cfdr2kalxcwv0" path="res://choque/texture_08.png" id="1_7fvcd"]
+[ext_resource type="Script" path="res://choque/scenes/main.gd" id="1_d8l6c"]
+[ext_resource type="PackedScene" uid="uid://bd0ttttigrsfo" path="res://choque/scenes/carro.tscn" id="1_unvkd"]
+[ext_resource type="PackedScene" uid="uid://bfto4nm264wau" path="res://ambulancia.tscn" id="2_0wxln"]
+[ext_resource type="PackedScene" uid="uid://btfrdihi3w114" path="res://choque/scenes/firetruck.tscn" id="4_qir3q"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_nebsk"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_lrn1w"]
+sky_material = SubResource("ProceduralSkyMaterial_nebsk")
+
+[sub_resource type="Environment" id="Environment_pgnk0"]
+background_mode = 2
+sky = SubResource("Sky_lrn1w")
+tonemap_mode = 2
+glow_enabled = true
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dfmlw"]
+size = Vector3(100, 1, 100)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_54hv6"]
+albedo_texture = ExtResource("1_7fvcd")
+uv1_scale = Vector3(0.08, 0.08, 0.08)
+uv1_triplanar = true
+
+[sub_resource type="BoxMesh" id="BoxMesh_lo8io"]
+material = SubResource("StandardMaterial3D_54hv6")
+size = Vector3(100, 1, 100)
+
+[node name="main" type="Node3D"]
+script = ExtResource("1_d8l6c")
+
+[node name="env" type="Node" parent="."]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="env"]
+transform = Transform3D(-0.866025, -0.429033, 0.256771, 0, 0.513541, 0.858065, -0.5, 0.743106, -0.44474, 0, 0, 0)
+light_color = Color(1, 1, 0.996078, 1)
+shadow_enabled = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="env"]
+environment = SubResource("Environment_pgnk0")
+
+[node name="piso" type="StaticBody3D" parent="."]
+transform = Transform3D(1, -3.48787e-16, 3.48787e-16, 3.48787e-16, 1, -3.48787e-16, -3.48787e-16, 3.48787e-16, 1, 1.06658, 0, -1.54151)
+metadata/_edit_group_ = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="piso"]
+shape = SubResource("BoxShape3D_dfmlw")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="piso"]
+transform = Transform3D(1, -1.21652e-31, 0, -1.21652e-31, 1, 0, 0, 0, 1, 0, 0, 0)
+mesh = SubResource("BoxMesh_lo8io")
+skeleton = NodePath("../CollisionShape3D")
+
+[node name="ambulancia" parent="." instance=ExtResource("2_0wxln")]
+transform = Transform3D(-5.94334e-09, 0, -1, 0, 1, 0, 1, 0, 5.94334e-09, 35.3309, 0.561252, -1.47307)
+
+[node name="carro" parent="." instance=ExtResource("1_unvkd")]
+transform = Transform3D(0.99884, 0, -0.0481524, 0, 1, 0, 0.0481524, 0, 0.99884, 0, 0.709841, 18.9305)
+nombre = "jorge"
+localizacion = "informacion de gps"
+id = 134
+
+[node name="trucka" parent="." instance=ExtResource("4_qir3q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.18933, 0.5, -34.5098)
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 23.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 60
+text = "todo bien"
+horizontal_alignment = 1
+vertical_alignment = 1

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://ml1g8f4dgtws"
+path="res://.godot/imported/box.obj-f600346a0549ac950009dd2da8809dac.mesh"
+
+[deps]
+
+files=["res://.godot/imported/box.obj-f600346a0549ac950009dd2da8809dac.mesh"]
+
+source_file="res://choque/kenney_car-kit/Models/OBJ format/box.obj"
+dest_files=["res://.godot/imported/box.obj-f600346a0549ac950009dd2da8809dac.mesh", "res://.godot/imported/box.obj-f600346a0549ac950009dd2da8809dac.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

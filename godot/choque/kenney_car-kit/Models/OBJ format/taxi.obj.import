@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://jlyl8wjaej7j"
+path="res://.godot/imported/taxi.obj-669eb116b18821879cd7757318087a7b.mesh"
+
+[deps]
+
+files=["res://.godot/imported/taxi.obj-669eb116b18821879cd7757318087a7b.mesh"]
+
+source_file="res://choque/kenney_car-kit/Models/OBJ format/taxi.obj"
+dest_files=["res://.godot/imported/taxi.obj-669eb116b18821879cd7757318087a7b.mesh", "res://.godot/imported/taxi.obj-669eb116b18821879cd7757318087a7b.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false
