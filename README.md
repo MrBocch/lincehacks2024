@@ -2,8 +2,8 @@
 
 ## El proyecto
 
-Que hace el proyecto
+Resumen del proyecto
 
 ## Dependencias
 
-- java
+que technologia, se usa
