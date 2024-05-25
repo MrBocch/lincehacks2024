@@ -3,3 +3,7 @@
 ## El proyecto
 
 Que hace el proyecto
+
+## Dependencias
+
+- java
