@@ -6,12 +6,25 @@ const JUMP_VELOCITY = 4.5
 const TURN_RADIUS = 2.5
 
 @export_group("Dato de usuario")
-@export var nombre = ""
-@export var localizacion = ""
-@export var id:int 
+@export var deviceSerialNumber = "ABC123"
+var data_to_send = {
+	"deviceInfo": {
+		"deviceName": "holaMundohehe",
+		"deviceSerialNumber": deviceSerialNumber,
+		"geolocation": {
+			"latitude": 40.71,
+			"longitude": -74.00,
+			"accuracy": 10,
+			"timestamp": "2024-05-26T12:00:00Z"
+		}
+	},
+	"accidentType": "Car crash"
+}
+
+var geoLocation
 
 @onready var http_request = $HTTPRequest
-@onready var url = "http://127.0.0.1:xxxx"
+@onready var url = "https://e26f-187-188-95-130.ngrok-free.app/device-notification"
 
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
@@ -61,13 +74,10 @@ func _on_area_3d_area_entered(trucka):
 
 	
 	# hacer peticion
-	var data = {
-		"nombre": nombre,
-		"localizacion": localizacion,
-		"id": id
-	}
 	
-	var data_send = JSON.stringify(data)
+	
+	var data_send = JSON.stringify(data_to_send)
+	print(data_send)
 	var headers = ["Content-Type: application/json"]
 	http_request.request(url, headers, HTTPClient.METHOD_POST, data_send)
 
@@ -75,5 +85,5 @@ func _on_area_3d_area_entered(trucka):
 # resultado de peticion
 func _on_http_request_request_completed(result, response_code, headers, body):
 	print(response_code)
-	print(body.get_string_from_utf8())
+	#print(body.get_string_from_utf8())
 	

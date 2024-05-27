@@ -61,9 +61,6 @@ transform = Transform3D(-5.94334e-09, 0, -1, 0, 1, 0, 1, 0, 5.94334e-09, 35.3309
 
 [node name="carro" parent="." instance=ExtResource("1_unvkd")]
 transform = Transform3D(0.99884, 0, -0.0481524, 0, 1, 0, 0.0481524, 0, 0.99884, 0, 0.709841, 18.9305)
-nombre = "jorge"
-localizacion = "informacion de gps"
-id = 134
 
 [node name="trucka" parent="." instance=ExtResource("4_qir3q")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.18933, 0.5, -34.5098)
