@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://cbcer1v5na3eq"]
 
 [ext_resource type="Script" path="res://samuel/droplet.gd" id="1_8x2oh"]
-[ext_resource type="Texture2D" uid="uid://co17cwxg3cf7u" path="res://assets/img/droplet.png" id="1_v4go0"]
+[ext_resource type="Texture2D" uid="uid://co17cwxg3cf7u" path="res://samuel/img/droplet.png" id="1_v4go0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jlnbh"]
 size = Vector2(34, 61)

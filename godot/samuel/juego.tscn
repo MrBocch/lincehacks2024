@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://bjd8lk7hfc5er"]
 
-[ext_resource type="Texture2D" uid="uid://dp3dpr240hk72" path="res://assets/img/bg_silla.jpg" id="1_qdjpk"]
+[ext_resource type="Texture2D" uid="uid://dp3dpr240hk72" path="res://samuel/img/bg_silla.jpg" id="1_qdjpk"]
 [ext_resource type="Script" path="res://samuel/juego.gd" id="1_rxakk"]
 [ext_resource type="PackedScene" uid="uid://c3ckarus2euwb" path="res://samuel/jugador.tscn" id="2_nv5re"]
 [ext_resource type="PackedScene" uid="uid://cbcer1v5na3eq" path="res://samuel/droplet.tscn" id="3_cilnc"]

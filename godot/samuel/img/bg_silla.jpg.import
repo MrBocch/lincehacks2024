@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://baqulgg0abpb0"
-path="res://.godot/imported/samuel.png-3edeb138cc8f62ab04126dddf93a4a59.ctex"
+uid="uid://dp3dpr240hk72"
+path="res://.godot/imported/bg_silla.jpg-d23e8a613abc4684dd4cef07afce2362.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/img/samuel.png"
-dest_files=["res://.godot/imported/samuel.png-3edeb138cc8f62ab04126dddf93a4a59.ctex"]
+source_file="res://samuel/img/bg_silla.jpg"
+dest_files=["res://.godot/imported/bg_silla.jpg-d23e8a613abc4684dd4cef07afce2362.ctex"]
 
 [params]
 

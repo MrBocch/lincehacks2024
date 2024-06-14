@@ -1,8 +1,8 @@
 [gd_scene load_steps=6 format=3 uid="uid://c3ckarus2euwb"]
 
 [ext_resource type="Script" path="res://samuel/jugador.gd" id="1_bs7wx"]
-[ext_resource type="Texture2D" uid="uid://baqulgg0abpb0" path="res://assets/img/samuel.png" id="1_tlb00"]
-[ext_resource type="Texture2D" uid="uid://c64e1t1kih625" path="res://assets/img/tina.png" id="3_0jey7"]
+[ext_resource type="Texture2D" uid="uid://baqulgg0abpb0" path="res://samuel/img/samuel.png" id="1_tlb00"]
+[ext_resource type="Texture2D" uid="uid://c64e1t1kih625" path="res://samuel/img/tina.png" id="3_0jey7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tr01q"]
 

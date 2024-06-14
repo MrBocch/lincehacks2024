@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c64e1t1kih625"
-path="res://.godot/imported/tina.png-9f8a9864f890b2f622e56be2e98e9510.ctex"
+uid="uid://co17cwxg3cf7u"
+path="res://.godot/imported/droplet.png-ece39a323bee11cc189c73876c92d737.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/img/tina.png"
-dest_files=["res://.godot/imported/tina.png-9f8a9864f890b2f622e56be2e98e9510.ctex"]
+source_file="res://samuel/img/droplet.png"
+dest_files=["res://.godot/imported/droplet.png-ece39a323bee11cc189c73876c92d737.ctex"]
 
 [params]
 
